@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Weather Dashboard </title>
+</head>
+
+<body>
+    <header>
+        <h1> Weather Dashboard </h1>
+    </header>
+    <main class="box">
+        <!-- left side bar -->
+        <article id="search" class="box">
+            <!-- search bar -->
+            <section id="search-bar" class="box">
+                <label for="user_input">
+                    <h2>Search by City name</h2>
+                </label>
+                <input id="user-input" placeholder="Enter a City">
+            </section>
+            <!-- search history -->
+            <button id="history-btn">Search History</button>
+            <section id="search-history" class="box">
+                <button class="link-btn link-btn-h"></button>
+                <h2>Search History</h2>
+
+            </section>
+        </article>
+        <!-- right side page -->
+        <article id="display" class="box">
+            <section id="display-current" class="box">
+                <!-- current info -->
+                <div id="city-info">
+                    <h2></h2>
+                    <h2></h2>
+                    <img>
+                </div>
+                <div id="weather-info">
+                    <h4>Temp: </h4>
+                    <h4> &#x2109;</h4><br>
+                    <h4>Wind: </h4>
+                    <h4> MPH</h4><br>
+                    <h4>Humidity: </h4>
+                    <h4> %</h4>
+                </div>
+            </section>
+            <!-- next 5 day -->
+            <h3 id="forcast-title">5-Day Forecast</h3>
+            <section id="display-next5" class="box">
+                <div class="'weather-info">
+                    <h4></h4>
+                    <img>
+                    <h4></h4>
+                    <h4></h4>
+                    <h4></h4>
+                </div>
+                <div class="'weather-info">
+                    <h4></h4>
+                    <img>
+                    <h4></h4>
+                    <h4></h4>
+                    <h4></h4>
+                </div>
+                <div class="'weather-info">
+                    <h4></h4>
+                    <img>
+                    <h4></h4>
+                    <h4></h4>
+                    <h4></h4>
+                </div>
+                <div class="'weather-info">
+                    <h4></h4>
+                    <img>
+                    <h4></h4>
+                    <h4></h4>
+                    <h4></h4>
+                </div>
+                <div class="'weather-info">
+                    <h4></h4>
+                    <img>
+                    <h4></h4>
+                    <h4></h4>
+                    <h4></h4>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>Enjoyed the Weather</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
